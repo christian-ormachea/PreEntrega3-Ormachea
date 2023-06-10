@@ -1,0 +1,61 @@
+
+
+.hero{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(245deg, #375d72 0%, #5e83b4 28%, #31bbe6 75%);
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+
+    padding: 0 19%; //el relleno que no puedo aplicarselo a su contenedor padre ojo!!
+
+    .hero-text{
+        h1{
+            font-size: 40px;
+            line-height: 1;
+            color: darkblue;
+            margin-bottom: 40px;
+        }
+
+        p{
+            margin-left: 50px;
+            color: darkblue;
+            line-height: 1.9;
+            font-size: 20px;
+            margin-bottom: 40px;
+        }
+
+        .hero-img{
+            img{
+               width: 400px;
+               height: auto; 
+            }
+        }
+
+        a{
+            margin-left: 80px;
+            display: inline-block;
+            color: white;
+            background: #45afe0;
+            border: 1px solid transparent;
+            padding: 12px 30px;
+            line-height: 1.4;
+            font-size: 14px;
+            font-weight: 200;
+            border-radius: 30px;
+            text-transform: uppercase;
+            transition: all .55s ease;
+
+            &:hover{
+                background: transparent;
+                border: 1px solid white;
+                transform: translateX(4px);
+            }
+        }
+        
+    }
+}

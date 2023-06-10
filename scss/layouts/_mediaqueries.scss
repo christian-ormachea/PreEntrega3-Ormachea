@@ -1,0 +1,187 @@
+/** INICIO MEDIA QUERIES PARA EL INDEX **/
+
+@media(max-width: 1535px){
+    header{
+        padding: 15px 3%;
+        transition: .2s;
+    }
+
+
+}
+
+@media(max-width: 1460px){
+    .hero{
+        padding: 0 10%;
+        transition: .2s;
+    }
+}
+
+@media(max-width: 1340px){
+    .hero-img{
+        width: 100%;
+        height: auto;
+
+        .hero-text h1{
+            font-size: 25px;
+            margin: 0 0 30px;
+        }
+    }
+    
+}
+
+@media(max-width: 1195px){
+    .hero {
+        padding: 0 3%;
+        transition: .2s;
+        .hero-text{
+            text-align: center;
+            padding-top: 115px;
+
+            p{
+                margin-left: 15px;
+            }
+        }
+
+        .hero-img{
+            img{
+                width: 150px;
+                height: auto;
+            }
+        }
+        height: 100%;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width: 990px){
+    header {
+        #menu-icon{
+            display: block;
+        } 
+        .navlist{
+            position: absolute;
+            top: 100%;
+            right: -100%;
+            width: 300px;
+            height: 60vh;
+            background: rgba(18, 38, 58, 0.836);
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding: 50px 20px;
+            transition: all .55s ease;
+            
+            a{
+                margin-left: 0;
+                display: block;
+                margin: 5px 0;
+            }
+
+            
+        }
+
+        .navlist.open {
+            right: 0;
+        }
+    }
+    
+}
+
+@media(max-width: 680px){
+    .hero-img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+/** MEDIA QUERIES PARA EL FOOTER **/
+@media (max-width: 768px) {
+    .footer-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      .social-icons {
+        margin-bottom: 30px;
+      }
+
+      .footer-nav {
+        ul {
+          flex-wrap: wrap;
+
+          li a {
+            margin: 10px;
+          }
+        }
+      }
+    }
+}
+
+/**Fin de los media queries para el footer **/
+
+/** FIN DE LOS MEDIA QUERIES PARA EL INDEX **/
+
+/** MEDIA QUIERIES PARA QUIEN SOY**/
+
+@media (min-width: 768px) {
+    .main {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    img {
+      margin-top: 0;
+      width: 420px;
+    }
+
+    .about-text {
+      margin-top: 0;
+      width: calc(100% - 420px);
+      padding-left: 40px;
+
+      h1 {
+        font-size: 60px;
+      }
+
+      h2 {
+        font-size: 30px;
+      }
+
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+
+/** Fin de los media queries para el quien soy **/
+
+/** Meida Queries para mis proyectos **/
+
+@media (max-width: 768px) {
+    .container{
+        padding: 10px;
+        .card-container{
+            grid-template-columns: 1fr;
+            padding: 10px;
+        }
+    }
+    
+}
+
+/** Fin de los media queries para mis proyectos **/
+
+/** Media queries para mi galeria **/
+
+@media (max-width: 768px) {
+    .gallery{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }    
+}
+
+/** Fin de los media queries para la galeria **/

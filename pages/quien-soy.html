@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Aqui te cuento un poco mas de informacion personal sobre mi, cuales son mis objetivos en el mundo IT.">
+    <title>Quien Soy | Ormachea Christian</title>
+    <!-- Boxicons link-->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- remixicons link -->
+
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- link al css -->
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo"> Christian </a>
+    
+        <ul class="navlist">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="quien-soy.html">Quien soy</a></li>
+          <li><a href="mis-proyectos.html">Mis Proyectos</a></li>
+          <li><a href="galeria.html">Mi galeria</a></li>
+          <li><a href="contacteme.html">Contacteme</a></li>
+        </ul>
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+    <main>
+        <section class="about">
+            <div class="main">
+                <img src="../img/pic-2.png" alt="" class="image-about">
+                <div class="about-text">
+                    <h1>Quien soy</h1>
+                    <h2> <span> Desarrollador </span>Web Front End</h2>
+                    <p>Hola que tal, me llamo Ormachea Christian y estoy haciendo una carrera de desarrollador Front End en CoderHouse, tambien estoy cursando en la facultad Licenciatura en Informatica y Tecnicatura en Programacion, soy una persona bastante llevadera para trabajar, y siempre estoy predispuesto a que las cosas salgan bien, desde pequeno siempre me intereso el desarrollo, ahora como tengo la posibilidad de pagarme un curso y abocarme a mi carrera como unviersitario estoy por fin cumpliendo mis suenos, queres saber cuales son mis trabajos?</p>
+                    <button type="button"> Mis Proyectos</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="social-icons">
+                <a href="https://www.instagram.com/chrissormachea/?hl=es"><i class='bx bxl-instagram bx-xs'></i></a>
+                <a href="https://steamcommunity.com/id/zargus/"><i class='bx bxl-steam bx-xs'></i></a>
+                <a href="https://www.twitch.tv/krosztv"><i class='bx bxl-twitch bx-xs'></i></a>
+            </div>            
+            <div class="footer-nav">
+                <ul>
+                    <li>
+                        <a href="../index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="quien-soy.html">Quien Soy</a>
+                    </li>
+                    <li>
+                        <a href="mis-proyectos.html">Mis Proyectos</a>
+                    </li>
+                    <li>
+                        <a href="galeria.html">Mi Galeria</a>
+                    </li>
+                    <li>
+                        <a href="contacto.html">Contacteme</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>Copyright &copy;2023; Designed by Ormachea Christian to CoderHouse</p>
+        </div>
+    </footer>
+    
+</body>
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<script>
+    let menu = document.querySelector('#menu-icon');
+    let navlist = document.querySelector('.navlist');
+  
+    menu.onclick = () => {
+      menu.classList.toggle('bx-x');
+      navlist.classList.toggle('open');
+    };
+  
+    const sr = ScrollReveal ({
+      distance: '65px',
+      duration: 2600,
+      delay: 450,
+      reset: true,
+    });
+  
+    sr.reveal('.image-about',{delay:200, origin: 'top'});
+    sr.reveal('.about-text',{delay:450, origin: 'top'});
+    
+  </script>
+</html>

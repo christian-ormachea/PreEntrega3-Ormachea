@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Estos son los proyectos en los que estuve involucrado.">
+    <title>Mis Proyectos | Ormachea Chrisitian</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- remixicons link -->
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- link al css -->
+    <link rel="stylesheet" href="../css/styles.css">
+
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo"> Christian </a>
+    
+        <ul class="navlist">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="quien-soy.html">Quien soy</a></li>
+          <li><a href="mis-proyectos.html">Mis Proyectos</a></li>
+          <li><a href="galeria.html">Mi galeria</a></li>
+          <li><a href="contacteme.html">Contacteme</a></li>
+        </ul>
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="card-container">
+              <div class="card">
+                <img src="../img/carretera.jpg" alt="Developer 1">
+                <div class="card-content">
+                  <h3>Mi Primer Proyecto de CoderHouse</h3>
+                  <p>Un sitio web con html5 y css3</p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="../img/carretera.jpg" alt="Developer 2">
+                <div class="card-content">
+                  <h3>Mi Segundo Proyecto de CoderHouse</h3>
+                  <p>Un sitio web parecido al anterior, pero hecho con bootstrap5 y sus herramientas para hacerlo responsive!</p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="../img/carretera.jpg" alt="Developer 3">
+                <div class="card-content">
+                  <h3>Mi Tercer Proyecto de CoderHouse</h3>
+                  <p>Un sitio web hecho con Sass y ademas haciendolo responsive pero con las media queries del mismo.</p>
+                </div>
+              </div>
+            </div>
+        </div>
+                  
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="social-icons">
+                <a href="https://www.instagram.com/chrissormachea/?hl=es"><i class='bx bxl-instagram bx-xs'></i></a>
+                <a href="https://steamcommunity.com/id/zargus/"><i class='bx bxl-steam bx-xs'></i></a>
+                <a href="https://www.twitch.tv/krosztv"><i class='bx bxl-twitch bx-xs'></i></a>
+            </div>            
+            <div class="footer-nav">
+                <ul>
+                    <li>
+                        <a href="../index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="quien-soy.html">Quien Soy</a>
+                    </li>
+                    <li>
+                        <a href="mis-proyectos.html">Mis Proyectos</a>
+                    </li>
+                    <li>
+                        <a href="galeria.html">Mi Galeria</a>
+                    </li>
+                    <li>
+                        <a href="contacto.html">Contacteme</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>Copyright &copy;2023; Designed by Ormachea Christian to CoderHouse</p>
+        </div>
+    </footer>
+</body>
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<script>
+    let menu = document.querySelector('#menu-icon');
+    let navlist = document.querySelector('.navlist');
+  
+    menu.onclick = () => {
+      menu.classList.toggle('bx-x');
+      navlist.classList.toggle('open');
+    };
+  
+    const sr = ScrollReveal ({
+      distance: '65px',
+      duration: 2600,
+      delay: 450,
+      reset: true,
+    });
+  
+    sr.reveal('.card-container',{delay:200, origin: 'top'});
+    sr.reveal('.card-content',{delay:450, origin: 'top'});
+    
+</script>
+</html>

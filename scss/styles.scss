@@ -1,0 +1,19 @@
+//BASE IMPORTS
+@import 'base/vars';
+@import 'base/reset';
+@import 'base/utilidades';
+
+//COMPONENTS IMPORTS
+
+@import 'components/navbar';
+@import 'components/footer';
+
+
+//LAYOUTS IMPORTS
+
+@import 'layouts/index';
+@import 'layouts/quien-soy';
+@import 'layouts/mis-proyectos';
+@import 'layouts/galeria';
+@import 'layouts/contacteme';
+@import 'layouts/mediaqueries';

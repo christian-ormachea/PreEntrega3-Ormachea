@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mi galeria es donde voy a estar posteando todas las imagenes de proyectos en los que he estado colaborando y/o haciendo por mi cuenta">
+    <title>Mi Galeria | Ormachea Chrisitian</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- remixicons link -->
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- link al css -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo"> Christian </a>
+    
+        <ul class="navlist">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="quien-soy.html">Quien soy</a></li>
+          <li><a href="mis-proyectos.html">Mis Proyectos</a></li>
+          <li><a href="galeria.html">Mi galeria</a></li>
+          <li><a href="contacteme.html">Contacteme</a></li>
+        </ul>
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+    <main>
+        <div class="gallery-container">
+            <div class="gallery">
+              <div class="gallery-item">
+                <img src="../img/carretera.jpg" alt="Image 1">
+              </div>
+              <div class="gallery-item">
+                <img src="../img/carretera.jpg" alt="Image 2">
+              </div>
+              <div class="gallery-item">
+                <img src="../img/carretera.jpg" alt="Image 3">
+              </div>
+              <div class="gallery-item">
+                <img src="../img/carretera.jpg" alt="Image 4">
+              </div>
+              <div class="gallery-item">
+                <img src="../img/carretera.jpg" alt="Image 5">
+              </div>
+              <div class="gallery-item">
+                <img src="../img/carretera.jpg" alt="Image 6">
+              </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="social-icons">
+                <a href="https://www.instagram.com/chrissormachea/?hl=es"><i class='bx bxl-instagram bx-xs'></i></a>
+                <a href="https://steamcommunity.com/id/zargus/"><i class='bx bxl-steam bx-xs'></i></a>
+                <a href="https://www.twitch.tv/krosztv"><i class='bx bxl-twitch bx-xs'></i></a>
+            </div>            
+            <div class="footer-nav">
+                <ul>
+                    <li>
+                        <a href="../index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="quien-soy.html">Quien Soy</a>
+                    </li>
+                    <li>
+                        <a href="mis-proyectos.html">Mis Proyectos</a>
+                    </li>
+                    <li>
+                        <a href="galeria.html">Mi Galeria</a>
+                    </li>
+                    <li>
+                        <a href="contacto.html">Contacteme</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>Copyright &copy;2023; Designed by Ormachea Christian to CoderHouse</p>
+        </div>
+    </footer>
+
+
+</body>
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<script>
+    let menu = document.querySelector('#menu-icon');
+    let navlist = document.querySelector('.navlist');
+  
+    menu.onclick = () => {
+      menu.classList.toggle('bx-x');
+      navlist.classList.toggle('open');
+    };
+  
+    const sr = ScrollReveal ({
+      distance: '65px',
+      duration: 2600,
+      delay: 450,
+      reset: true,
+    });
+  
+    sr.reveal('.gallery-container',{delay:200, origin: 'top'});
+    sr.reveal('.gallery-item',{delay:450, origin: 'top'});
+    
+</script>
+</html>

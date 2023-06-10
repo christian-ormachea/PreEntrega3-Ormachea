@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Este es mi portafolio personal, aca vas a entrontrar informacion sobre mi persona y mi perfil profesional.">
+  <!-- Boxicons link-->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- remixicons link -->
+
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- link al css -->
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Home | Ormachea Christian</title>
+</head>
+<body>
+  <!-- Nav bar -->
+  <header>
+    <a href="index.html" class="logo"> Christian </a>
+
+    <ul class="navlist">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="pages/quien-soy.html">Quien soy</a></li>
+      <li><a href="pages/mis-proyectos.html">Mis Proyectos</a></li>
+      <li><a href="pages/galeria.html">Mi galeria</a></li>
+      <li><a href="pages/contacteme.html">Contacteme</a></li>
+    </ul>
+    <div class="bx bx-menu" id="menu-icon"></div>
+  </header>
+  <!-- Fin del navbar -->
+  <!-- Main -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Ormachea Christian <br> Front End Developer</h1>
+      <p> Desarrollador Web Junior! </p>
+      <a href="pages/contacteme.html"> Contacteme </a>
+    </div>
+    <div class="hero-img">
+      <img src="img/menu.svg" alt="desarrollo web">
+    </div>
+  </section>
+  <!-- Fin del main-->
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+        <div class="social-icons">
+            <a href="https://www.instagram.com/chrissormachea/?hl=es"><i class='bx bxl-instagram bx-xs'></i></a>
+            <a href="https://steamcommunity.com/id/zargus/"><i class='bx bxl-steam bx-xs'></i></a>
+            <a href="https://www.twitch.tv/krosztv"><i class='bx bxl-twitch bx-xs'></i></a>
+        </div>            
+        <div class="footer-nav">
+            <ul>
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="pages/quien-soy.html">Mis Intereses</a>
+                </li>
+                <li>
+                    <a href="pages/mis-proyectos.html">Mis Proyectos</a>
+                </li>
+                <li>
+                    <a href="pages/galeria.html">Mi Galeria</a>
+                </li>
+                <li>
+                    <a href="pages/contacto.html">Contacteme</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <p>Copyright &copy;2023; Designed by Ormachea Christian to CoderHouse</p>
+    </div>
+</footer>
+
+  <!-- Fin del footer -->
+</body>
+
+
+<!-- Script del scroll reveal -->
+
+<script src="https://unpkg.com/scrollreveal"></script>
+<!-- Script del navbar-->
+
+<script>
+  let menu = document.querySelector('#menu-icon');
+  let navlist = document.querySelector('.navlist');
+
+  menu.onclick = () => {
+    menu.classList.toggle('bx-x');
+    navlist.classList.toggle('open');
+  };
+
+  const sr = ScrollReveal ({
+    distance: '65px',
+    duration: 2600,
+    delay: 450,
+    reset: true,
+  });
+
+  sr.reveal('.hero-text',{delay:200, origin: 'top'});
+  sr.reveal('.hero-img',{delay:450, origin: 'top'});
+  
+</script>
+
+</html>
