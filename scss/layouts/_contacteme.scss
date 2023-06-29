@@ -1,15 +1,16 @@
 .container-background{
-    background: linear-gradient(245deg, #375d72 0%, #5e83b4 28%, #31bbe6 75%);
+    background: linear-gradient(245deg, #2a2a36 0%, #1e406d 28%, #155468 75%);
     margin-top: 80px;
-    .contact-form {
-        
+    min-height: 70vh;
+    .contact-form {    
         padding: 20px;
         max-width: 400px;
         margin: 0 auto;
         text-align: center;
       
         h2 {
-          color: #142544;
+          color: #ffffff;
+          margin-top: 40px;
           margin-bottom: 20px;
         }
       
@@ -48,7 +49,8 @@
               background-color: #5452f7;
             }
           }
-        }
-      }
+        }   
+    }
+    
 }
 

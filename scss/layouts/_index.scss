@@ -4,7 +4,7 @@
     height: 100%;
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(245deg, #375d72 0%, #5e83b4 28%, #31bbe6 75%);
+    background: linear-gradient(245deg, #2a2a36 0%, #1e406d 28%, #155468 75%);
     position: relative;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -17,13 +17,13 @@
         h1{
             font-size: 40px;
             line-height: 1;
-            color: darkblue;
+            color: rgb(255, 255, 255);
             margin-bottom: 40px;
         }
 
         p{
             margin-left: 50px;
-            color: darkblue;
+            color: rgb(255, 255, 255);
             line-height: 1.9;
             font-size: 20px;
             margin-bottom: 40px;
@@ -39,8 +39,8 @@
         a{
             margin-left: 80px;
             display: inline-block;
-            color: white;
-            background: #45afe0;
+            color: rgb(255, 255, 255);
+            background: #000000;
             border: 1px solid transparent;
             padding: 12px 30px;
             line-height: 1.4;
@@ -52,7 +52,7 @@
 
             &:hover{
                 background: transparent;
-                border: 1px solid white;
+                border: 1px solid rgb(223, 248, 245);
                 transform: translateX(4px);
             }
         }

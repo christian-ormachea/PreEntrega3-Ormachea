@@ -116,7 +116,7 @@ footer .footer-copyright p {
   height: 100%;
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(245deg, #375d72 0%, #5e83b4 28%, #31bbe6 75%);
+  background: linear-gradient(245deg, #2a2a36 0%, #1e406d 28%, #155468 75%);
   position: relative;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -127,12 +127,12 @@ footer .footer-copyright p {
 .hero .hero-text h1 {
   font-size: 40px;
   line-height: 1;
-  color: darkblue;
+  color: rgb(255, 255, 255);
   margin-bottom: 40px;
 }
 .hero .hero-text p {
   margin-left: 50px;
-  color: darkblue;
+  color: rgb(255, 255, 255);
   line-height: 1.9;
   font-size: 20px;
   margin-bottom: 40px;
@@ -144,8 +144,8 @@ footer .footer-copyright p {
 .hero .hero-text a {
   margin-left: 80px;
   display: inline-block;
-  color: white;
-  background: #45afe0;
+  color: rgb(255, 255, 255);
+  background: #000000;
   border: 1px solid transparent;
   padding: 12px 30px;
   line-height: 1.4;
@@ -157,14 +157,14 @@ footer .footer-copyright p {
 }
 .hero .hero-text a:hover {
   background: transparent;
-  border: 1px solid white;
+  border: 1px solid rgb(223, 248, 245);
   transform: translateX(4px);
 }
 
 .about {
   width: 100%;
   padding: 78px 0px;
-  background: linear-gradient(245deg, #375d72 0%, #5e83b4 28%, #31bbe6 75%);
+  background: linear-gradient(245deg, #2a2a36 0%, #1e406d 28%, #155468 75%);
 }
 .about .main {
   width: 95%;
@@ -227,10 +227,16 @@ footer .footer-copyright p {
   margin-top: 80px;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px;
-  background: linear-gradient(245deg, #375d72 0%, #5e83b4 28%, #31bbe6 75%);
+  background: linear-gradient(245deg, #2a2a36 0%, #1e406d 28%, #155468 75%);
+}
+.container .title {
+  color: #ffffff;
+  font-size: 24px;
+  margin-bottom: 100px;
 }
 .container .card-container {
   display: grid;
@@ -265,31 +271,14 @@ footer .footer-copyright p {
   color: #888;
   line-height: 1.4;
 }
-
-.gallery-container {
-  margin-top: 80px;
-  background: linear-gradient(245deg, #375d72 0%, #5e83b4 28%, #31bbe6 75%);
-  padding: 20px;
-}
-.gallery-container .gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-gap: 20px;
-}
-.gallery-container .gallery .gallery-item {
-  border-radius: 50px;
-}
-.gallery-container .gallery .gallery-item img {
-  border-radius: 50px;
-  width: 100%;
-  height: auto;
-  display: block;
+.container .card-container .card .card-content a:hover {
+  text-decoration: underline;
 }
 
 .container-background {
-  background: linear-gradient(245deg, #375d72 0%, #5e83b4 28%, #31bbe6 75%);
+  background: linear-gradient(245deg, #2a2a36 0%, #1e406d 28%, #155468 75%);
   margin-top: 80px;
+  min-height: 70vh;
 }
 .container-background .contact-form {
   padding: 20px;
@@ -298,7 +287,8 @@ footer .footer-copyright p {
   text-align: center;
 }
 .container-background .contact-form h2 {
-  color: #142544;
+  color: #ffffff;
+  margin-top: 40px;
   margin-bottom: 20px;
 }
 .container-background .contact-form form {
